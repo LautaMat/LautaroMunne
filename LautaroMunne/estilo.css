@@ -1,0 +1,307 @@
+.fondo{
+    height: 100vh;
+    background-image: url("https://2.bp.blogspot.com/-lvxbQ3BZ_Nk/WtnTkfEDyCI/AAAAAAAABV8/KmhRVR3xu3ki-N8HVb4tMcrwOSWlST0pwCLcBGAs/w1200-h630-p-k-no-nu/Color%2Bbomb4622_rectangle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul li{
+    display: inline;
+    color: white;
+}
+ul:hover ul{
+    display: block;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    color: aquamarine;
+}
+
+
+.ropa{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    overflow: auto;
+    
+}
+.ropa__titulo{
+text-align: center;
+line-height: 1.6px;
+font-weight: bold;
+font-style: normal;
+font-size: 100%;
+font-family: "Comic Sans Ms", sans-serif;
+color: greenyellow;
+}
+.ropa__titulo--uppercase{
+    text-transform: uppercase;
+}
+
+.ropa__titulo--black{
+    color: black;
+}
+.ropa__titulo--blanco{
+    color: white;
+}
+.ropa__lista{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulario__letra{
+    color: white;
+}
+.ropa__lista
+.texto{
+    font-size: 12px;
+}
+.cuadro{
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+}
+.cuadro--margen--25px{
+margin: 25px;
+margin-top: 150px;
+}
+.cuadro--padding--25px{
+padding: 5px 20px 35px 65px;
+}
+.cuadro--borde--5px{
+border-width: 5px;
+border-style: solid;
+border-color: black;
+border-left: solid 35px blue;
+border-top: solid 35px blue;
+}
+/*Accesorios*/
+.accesorios{
+    display: flex;
+    color: white;
+}
+.collar{
+    display: flex;
+    color: white;
+}
+/*Ropa interior*/
+.hombre{
+    display: flex;
+    color: white;
+    float: left;
+}
+.mujer{
+    display: flex;
+    color: white;
+}
+/*Pantalones*/
+.pantalones{
+    color: white;
+}
+
+
+/*Perfumes*/
+.perfume{
+    color: white;
+}
+.perfume__titulo{
+    text-align: center;
+    line-height: 1.6px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 100%;
+    font-family: "Comic Sans Ms", sans-serif;
+    margin-top: 10px;
+    }
+/*Remeras*/
+.remeras{
+    color: white;
+}
+.remera__titulo{
+    text-align: center;
+    line-height: 1.6px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 100%;
+    font-family: "Comic Sans Ms", sans-serif;
+    margin-top: 10px;
+    color: white;
+    }
+
+/**/
+#plantilla {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " hombre2 mujer2" /* 2fr */
+        " footer footer"; /* 170px */
+    /* 20%  auto 300px  */
+    grid-template-rows: 70px auto 3fr 170px;
+    grid-template-columns: repeat(2, 3fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+    header {
+        grid-area: header;
+        background-color: tomato;
+    }
+    footer h2 {
+        justify-self: center;
+        align-self: center;
+    }
+    footer {
+        display: grid;
+        justify-content: center; /* Horizontal */
+        align-items: center; /* vertical */
+        grid-area: footer;
+    }
+
+
+.mujer2 {
+        background-color: black;
+        grid-area: mujer2;
+        margin-bottom: 50px;
+    }
+.hombre2 {
+        grid-area: hombre2;
+        background-color: rgb(8, 6, 0);
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .border-items {
+        border: 3px;
+        border-color: lightgreen;
+        border-style: solid;
+    }
+    @media screen and (max-width: 768px) {
+        #plantilla {
+            display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " hombre2 mujer2" /* 2fr */
+        " footer footer"; /* 170px */
+    /* 20%  auto 300px  */
+    grid-template-rows: 70px auto 3fr 170px;
+    grid-template-columns: repeat(2, 3fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+        }
+    }
+    
+    @media (min-width:1000px) {
+        #plantilla {
+            display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " hombre2 mujer2"
+        " footer footer";
+    grid-template-rows: 70px auto 3fr 170px;
+    grid-template-columns: repeat(2, 3fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+        }
+    }
+    #plantillaIndex{
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+            " iframe form"
+            " footer footer"; 
+        grid-template-rows: 70px auto 3fr 170px;
+        grid-template-columns: repeat(2, 3fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+
+    form{
+        width: 20%;
+        float: right;
+    }
+    iframe{
+        margin: 50px;
+    }
+    
+    .borde {
+        width: 100px;
+        height: 200px;
+        border-color: black;
+        border-style: solid;
+        transition: all 1s;
+    }
+    .borde:hover {
+        height: 200px;
+        width: 150px;
+        background: rgb(75, 0, 174);
+        color: white;
+        transform: skewx(0deg);
+    }
+    .borde__ropa {
+        width: 100px;
+        height: 100px;
+        border-color: black;
+        border-style: solid;
+        transition: all 1s;
+    }
+    .borde__ropa:hover {
+        height: 100px;
+        width: 200px;
+        background: rgb(172, 172, 172);
+        color: white;
+        transform: skewx(0deg);
+    }
+    .shake {
+        margin: auto;
+    }
+    
+    .shake:hover {
+        animation: mover 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes mover {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        90% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+    .descripcionRopa{
+        display: flex;
+        color: transparent;
+        margin-left: 20px;
+        transition: all 1s;
+    } 
