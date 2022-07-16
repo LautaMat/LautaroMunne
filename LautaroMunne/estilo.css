@@ -238,7 +238,7 @@ border-top: solid 35px blue;
     .borde:hover {
         height: 200px;
         width: 150px;
-        background: rgb(75, 0, 174);
+        background: lightgreen;
         color: white;
         transform: skewx(0deg);
     }
