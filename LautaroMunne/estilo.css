@@ -19,7 +19,7 @@ a{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    color: aquamarine;
+    color: aqua;
 }
 
 
@@ -238,7 +238,7 @@ border-top: solid 35px blue;
     .borde:hover {
         height: 200px;
         width: 150px;
-        background: lightgreen;
+        background: crimson;
         color: white;
         transform: skewx(0deg);
     }
