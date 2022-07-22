@@ -241,6 +241,7 @@ header{
         border-color: black;
         border-style: solid;
         transition: all 1s;
+        margin: 5px;
     }
     .borde__ropa:hover {
         height: 100px;
