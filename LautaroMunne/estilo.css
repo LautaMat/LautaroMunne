@@ -159,6 +159,8 @@ header{
         background-color: black;
         grid-area: mujer2;
         margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 .hombre2 {
         grid-area: hombre2;
