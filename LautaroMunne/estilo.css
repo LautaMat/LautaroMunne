@@ -229,7 +229,7 @@ header{
         transition: all 1s;
     }
     .borde:hover {
-        height: 200px;
+        height: 235px;
         width: 150px;
         background: aquamarine;
         color: white;
